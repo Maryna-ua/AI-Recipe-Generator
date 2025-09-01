@@ -1,4 +1,8 @@
+body {
+  background-color: rgb(240, 222, 173);
+}
 h1 {
-  background-color: grey;
-  font-family: sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
 }
