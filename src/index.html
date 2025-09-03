@@ -8,38 +8,40 @@
   </head>
 
   <body>
-    <header>
-      <h1>WELCOME TO THE AI RECIPE GENERATOR</h1>
-    </header>
-    <main>
-      <input
-        type="text"
-        placeholder="Please, enter a dish"
-        autofocus
-        required
-        autocomplete="off"
-      />
-      <input type="submit" value="GO" />
-      <div>Recipe of ...</div>
-    </main>
-    <footer>
-      The AI project was coded by
-      <a href="https://github.com/Maryna-ua">Maryna Parkhomenko</a>
-      and is
-      <a
-        href="https://github.com/Maryna-ua/AI-Recipe-Generator"
-        target="_blank"
-      >
-        open-soursed on GitHub</a
-      >
-      and is
-      <a
-        href="https://the-best-ai-recipe-generator.netlify.app/"
-        target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
-
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI Recipe Generator👩‍🍳</h1>
+      </header>
+      <div class="main">
+        <input
+          id="recipeRequest"
+          type="text"
+          placeholder="Enter a dish name"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <input id="search" type="submit" value="GO" />
+      </div>
+      <div class="answerRecipe">Recipe for...</div>
+      <footer>
+        The AI project was coded by
+        <a href="https://github.com/Maryna-ua">Maryna Parkhomenko</a>
+        and is
+        <a
+          href="https://github.com/Maryna-ua/AI-Recipe-Generator"
+          target="_blank"
+        >
+          open-soursed on GitHub</a
+        >
+        and is
+        <a
+          href="https://the-best-ai-recipe-generator.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
