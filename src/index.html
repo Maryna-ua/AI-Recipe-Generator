@@ -3,6 +3,8 @@
   <head>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>JavaScript Sandbox</title>
     <meta charset="UTF-8" />
   </head>
@@ -12,7 +14,7 @@
       <header>
         <h1>Welcome to the AI Recipe Generator👩‍🍳</h1>
       </header>
-      <form>
+      <form id="recipe-form">
         <input
           id="dish"
           type="text"
