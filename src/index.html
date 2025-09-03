@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="styles.css" rel="stylesheet" type="text/css" />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>JavaScript Sandbox</title>
     <meta charset="UTF-8" />
   </head>
@@ -12,18 +12,18 @@
       <header>
         <h1>Welcome to the AI Recipe Generator👩‍🍳</h1>
       </header>
-      <div class="main">
+      <form>
         <input
-          id="recipeRequest"
+          id="dish"
           type="text"
           placeholder="Enter a dish name..."
           autofocus
           required
           autocomplete="off"
         />
-        <input id="search" type="submit" value="GO" />
-      </div>
-      <div class="answerRecipe">Recipe for...</div>
+        <input id="confirm" type="submit" value="GO" />
+      </form>
+      <div class="answerRecipe"></div>
       <footer>
         The AI project was coded by
         <a href="https://github.com/Maryna-ua">Maryna Parkhomenko</a>

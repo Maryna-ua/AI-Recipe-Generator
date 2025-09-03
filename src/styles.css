@@ -13,7 +13,7 @@ h1 {
   font-size: 24px;
   text-align: center;
 }
-.main {
+form {
   margin: 15px auto;
 }
 input {
@@ -22,11 +22,10 @@ input {
   box-shadow: 0px 5px 7px rgb(5, 5, 5, 0.5);
   border-radius: 10px;
 }
-#recipeRequest {
-  text-align: center;
+#dish {
   padding: 5px 30px;
 }
-#search {
+#confirm {
   padding: 5px;
 }
 .answerRecipe {
