@@ -18,7 +18,7 @@ function recipeGenerator(event) {
   let recipeElement = document.querySelector("#dish");
   //recipeElement.innerHTML = response.data.answer;
   let apiKey = "eo4f0aebct40cce30f501943d80f2bba";
-  let prompt = `Share the best recipe of the ${recipeElement.value} and write it in amount under 1500 symbols`;
+  let prompt = `Share the best recipe of the ${recipeElement.value} and write it in amount under 1000 symbols. Firstly write the ingridients, then steps of coking.`;
   let context =
     "You are an experienced cook, who teaches to cook easy and delicious dishes";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
