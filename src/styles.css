@@ -26,11 +26,20 @@ input {
   padding: 5px 30px;
 }
 #confirm {
-  padding: 5px;
+  padding-top: 5px;
+}
+#hint {
+  padding: 5px 60 0 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.hidden {
+  display: none;
 }
 .answerRecipe {
   margin-top: 50px;
   line-height: 1.5;
+  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
   border-left: 3px solid #fcfcfc;

@@ -8,7 +8,7 @@ function displayRecipe(response) {
     delay: 1,
     cursor: "",
   });
-  console.log(response.data.answer);
+  //console.log(response.data.answer);
 }
 
 function recipeGenerator(event) {
@@ -24,6 +24,17 @@ function recipeGenerator(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayRecipe);
+
+  let answerElement = document.querySelector(".answerRecipe");
+  answerElement.classList.remove("hidden");
+  //answerElement.innerHTML = `Generating the best ${recipeElement.value} recipe for you...`;
+
+  new Typewriter(".answerRecipe", {
+    strings: `Generating the best ${recipeElement.value} recipe for you...`,
+    autoStart: true,
+    delay: 100,
+    cursor: "",
+  });
 }
 
 let recipeRequestElement = document.querySelector("#recipe-form");
